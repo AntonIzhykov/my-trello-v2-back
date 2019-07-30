@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "LanzzLophophora",
+  "author": "Anton Izhykov a.k.a. LanzzLophophora",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^3.0.6",
