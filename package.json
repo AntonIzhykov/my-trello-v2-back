@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "restart-docker": "docker-compose rm && docker-compose build && docker-compose up"
   },
   "author": "Anton Izhykov a.k.a. LanzzLophophora",
   "license": "MIT",
@@ -13,6 +14,7 @@
     "bcrypt": "^3.0.6",
     "bluebird": "^3.5.5",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "express-mongoose-docs": "^0.3.2",
     "express-session": "^1.16.1",
