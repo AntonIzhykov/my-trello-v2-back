@@ -3,7 +3,6 @@ const bluebird = require('bluebird');
 const config = require('./config');
 
 const connectDatabase = () => {
-  console.log(process.env);
   mongoose.Promise = bluebird;
   mongoose.connect(`${config.database}`, { useNewUrlParser: true }, console.log('Mongo connected'));
   mongoose.set('useFindAndModify', false);
